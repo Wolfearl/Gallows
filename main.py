@@ -43,13 +43,13 @@ def check_word(selected_letter):
         painting_element.set(painting_element.get() + 1)
     if number_of_guessed_letters.get() == n.get():
         count_win.set(count_win.get() + 1)
-        showinfo(title="YOU WIN!!!  :)", message=f'Выигрыши: {count_win.get()}\nПроигрыши: {count_lose.get()}\n'
-                                                 f'Слово: {select_word.get()}')
+        showinfo(title="YOU WIN!!!  :)", message=f'Victories: {count_win.get()}\nLosses: {count_lose.get()}\n'
+                                                 f'Word: {select_word.get()}')
         new_game()
     elif painting_element.get() > 10:
         count_lose.set(count_lose.get() + 1)
-        showinfo(title="YOU LOSE!  :(", message=f'Выигрыши: {count_win.get()}\nПроигрыши: {count_lose.get()}\n'
-                                                 f'Слово: {select_word.get()}')
+        showinfo(title="YOU LOSE!  :(", message=f'Victories: {count_win.get()}\nLosses: {count_lose.get()}\n'
+                                                 f'Word: {select_word.get()}')
         new_game()
 
 
